@@ -3,12 +3,17 @@
 @theme{
     --color-white: #ffffff;
     --color-gray-100: #f7f3f6;
-    --color-gray-200: #f436f0;
+    --color-gray-200: #ebebeb;
 
     --color-gray-300: #7a6e76;
     --color-gray-400: #332e32;
     --color-green-light: #cddfcc;
     --color-green-base: #52a350;
-
+    --color-green-dark: #2d5a2c;
+    --color-blue: #2c52a3;
+    --color-blue-light: #a1b4f3;
+    --color-pink-light: #db61d1;
+    --color-pink-base: #a5219a;
+    --color-pink-dark: #8e3987;
 }
 
