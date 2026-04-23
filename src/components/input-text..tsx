@@ -18,8 +18,8 @@ export const inputTextVariants = cva(`border-b border-solid border-gray-200 focu
     }
 )
 
-interface InputTextProps extends VariantProps<typeof inputTextVariants>, Omit<React.ComponentProps<"input">, "size" | "disabled" > {
-
+interface InputTextProps extends VariantProps<typeof inputTextVariants>, Omit<React.ComponentProps<"input">, "size" | "disabled"  > {
+    
 }
 
 export default function InputText({

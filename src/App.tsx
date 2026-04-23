@@ -10,6 +10,7 @@ import TrashIcon from "./assets/icons/trash.svg?react"
 import InputText from "./components/input-text.";
 import Card from "./components/card";
 import Container from "./components/container";
+import Skeleton from "./components/skeleton";
 
 export default function App() {
 
@@ -34,9 +35,10 @@ export default function App() {
           <Icon svg={SpinnerIcon} animate />
         </div>
 
-        <div>
+        <div className="flex gap-1">
           <Badge variant={"secondary"}>5</Badge>
           <Badge variant={"primary"}>2 de 5</Badge>
+          <Badge loading >5</Badge>
         </div>
 
         <div>
@@ -44,10 +46,11 @@ export default function App() {
         </div>
 
 
-        <div>
+        <div className="flex gap-1">
           <ButtonIcon icon={PencilIcon} variant="secondary" />
           <ButtonIcon icon={TrashIcon} variant="tertiary" />
           <ButtonIcon icon={TrashIcon} variant="primary" />
+          <ButtonIcon icon={TrashIcon} loading/>
 
 
         </div>
@@ -59,6 +62,12 @@ export default function App() {
         <div>
           <Card size={"md"}>Card teste</Card>
         </div>
+      </div>
+
+      <div className="space-y-2">
+        <Skeleton className="h-6" />
+        <Skeleton className="h-6"/>
+        <Skeleton className="w-96 h-6"/>
       </div>
     </Container>
   )
