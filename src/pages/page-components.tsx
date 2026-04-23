@@ -11,6 +11,7 @@ import PlusIcon from "../assets/icons/plus.svg?react";
 import PencilIcon from "../assets/icons/pencil.svg?react";
 import SpinnerIcon from "../assets/icons/spinner.svg?react";
 import TrashIcon from "../assets/icons/trash.svg?react"
+import InputCheckbox from "../components/input-checkbox";
 
 export default function PageComponents() {
 
@@ -33,6 +34,10 @@ export default function PageComponents() {
                     <Icon svg={PlusIcon} />
                     <Icon svg={PencilIcon} className="fill-green-base" />
                     <Icon svg={SpinnerIcon} animate />
+                </div>
+
+                <div>
+                    <InputCheckbox/>
                 </div>
 
                 <div className="flex gap-1">
