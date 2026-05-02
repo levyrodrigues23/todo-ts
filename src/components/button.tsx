@@ -52,7 +52,7 @@ export const buttonTextVariants = cva("", {
 })
 
 interface ButtonProps extends Omit<React.ComponentProps<"button">, "size" | "disabled">, VariantProps<typeof buttonVariants>{
-    icon?: React.ComponentProps<typeof Icon>["svg"]
+    icon?: React.ComponentProps<typeof Icon>["svg"];
 
 }
 
